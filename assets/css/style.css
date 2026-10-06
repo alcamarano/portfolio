@@ -1,1 +1,92 @@
-/*CSS*/
+button {
+    cursor: pointer;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header__link {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.header__nav-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__nav-menu--open {
+    display: block;
+}
+
+.header__ul-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0;
+}
+
+.header__ul-menu li {
+    width: 100%;
+    height: 40px;
+}
+
+.header__ul-menu a {
+    height: 100%;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__button-menu {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (min-width: 800px) {
+    .header__button-menu {
+        display: none;
+    }
+
+    .header__nav-menu {
+        display: block;
+        position: static;
+        width: auto;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header__ul-menu {
+        flex-direction: row;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .header__ul-menu li, .header__ul-menu a {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    .header {
+        width: 1500px;
+        margin: 0 auto;
+    }
+}

@@ -1,10 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "author": "Augusto Lima Camarano",
+  "description": "Portfólio pessoal de desenvolvedor com foco em back-end",
+  "author": "Augusto Lima Camarano | @alcamarano | alcamarano.dev",
   "license": "MIT",
-  "keywords": ["portfolio", "web", "html", "css", "js", "tailwindcss"],
+  "keywords": ["portfolio", "html", "css", "javascript", "tailwindcss"],
+  "private": true,
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify"

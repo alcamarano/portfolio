@@ -1,5 +1,6 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -10,6 +11,19 @@
       "Courier New", monospace;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-inter: "Inter", sans-serif;
+    --color-accent: #5fd4c6;
+    --color-accent-contrast: #0b6e66;
+    --color-bg-light: #FAFAF8;
+    --color-menu-light: #F3F3EF;
+    --color-surface-light: #171B1F;
+    --color-text-primary-light: #17191C;
+    --color-border-light: #E3E5E8;
+    --color-bg-dark: #0F1214;
+    --color-menu-dark: #0C0F11;
+    --color-surface-dark: #FCFCFC;
+    --color-text-primary-dark: #ECEEF0;
+    --color-border-dark: #272D33;
   }
 }
 @layer base {
@@ -160,4 +174,71 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-border-light {
+    border-color: var(--color-border-light);
+  }
+  .bg-bg-light {
+    background-color: var(--color-bg-light);
+  }
+  .bg-menu-light {
+    background-color: var(--color-menu-light);
+  }
+  .stroke-surface-light {
+    stroke: var(--color-surface-light);
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+  .tracking-\[\.6px\] {
+    --tw-tracking: .6px;
+    letter-spacing: .6px;
+  }
+  .text-accent-contrast {
+    color: var(--color-accent-contrast);
+  }
+  .text-text-primary-light {
+    color: var(--color-text-primary-light);
+  }
+  @media (prefers-color-scheme: dark) {
+    .dark\:border-border-dark {
+      border-color: var(--color-border-dark);
+    }
+    .dark\:bg-bg-dark {
+      background-color: var(--color-bg-dark);
+    }
+    .dark\:bg-menu-dark {
+      background-color: var(--color-menu-dark);
+    }
+    .dark\:stroke-surface-dark {
+      stroke: var(--color-surface-dark);
+    }
+    .dark\:text-accent {
+      color: var(--color-accent);
+    }
+    .dark\:text-text-primary-dark {
+      color: var(--color-text-primary-dark);
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-tracking: initial;
+    }
+  }
+}
