@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Augusto Lima Camarano",
+  "license": "MIT",
+  "keywords": ["portfolio", "web", "html", "css", "js", "tailwindcss"],
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcamarano/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alcamarano/portfolio/issues"
+  },
+  "homepage": "https://github.com/alcamarano/portfolio#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
