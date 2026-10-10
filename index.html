@@ -12,53 +12,58 @@
     </head>
     <body class="bg-bg-light dark:bg-bg-dark font-inter tracking-[.6px]">
         <header class="header bg-bg-light dark:bg-bg-dark border-b border-border-light dark:border-border-dark">
-            <a href="#inicio" class="header__link text-text-primary-light dark:text-text-primary-dark">alcamarano<span class="text-accent-contrast dark:text-accent">.</span>dev</a>
+            <a href="#inicio" class="header__link text-text-primary-light dark:text-text-primary-dark">alcamarano<span class="">.</span>dev</a>
             <button type="button" id="btnHeaderMenu" class="header__button-menu" aria-expanded="false" aria-controls="navHeaderMenu" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="stroke-surface-light dark:stroke-surface-dark" aria-hidden="true" focusable="false"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-primary-light dark:text-text-primary-dark" aria-hidden="true" focusable="false"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
             </button>
             <nav id="navHeaderMenu" class="header__nav-menu border-b bg-menu-light dark:bg-menu-dark border-border-light dark:border-border-dark" aria-label="Menu principal">
-                <ul class="header__ul-menu">
+                <ul class="header__ul-menu text-text-primary-light dark:text-text-primary-dark">
                     <li><a href="#sobre">sobre</a></li>
                     <li><a href="#formacao">formação</a></li>
                     <li><a href="#habilidades">habilidades</a></li>
                     <li><a href="#jornada">jornada</a></li>
                     <li><a href="#projetos">projetos</a></li>
                     <li><a href="#contato">contato</a></li>
+                    <button type="button" id="btnTheme" class="header__button-theme">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-primary-light dark:hidden"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-text-primary-dark hidden dark:block"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    </button>
                 </ul>
             </nav>
         </header>
         <main class="main">
-            <section id="inicio">
+            <section id="inicio" class="main__section-hero">
+                
+            </section>
+
+            <section id="sobre" class="main__section-about">
 
             </section>
 
-            <section id="sobre">
+            <section id="formacao" class="main__section-training">
 
             </section>
 
-            <section id="formacao">
+            <section id="habilidades" class="main__section-skills">
 
             </section>
 
-            <section id="habilidades">
+            <section id="jornada" class="main__section-journey">
 
             </section>
 
-            <section id="jornada">
+            <section id="projetos" class="main__section-projects">
 
             </section>
 
-            <section id="projetos">
-
-            </section>
-
-            <section id="contato">
+            <section id="contato" class="main__section-contact">
 
             </section>
         </main>
         <footer class="footer">
             
         </footer>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/menu.js"></script>
+        <script src="assets/js/theme.js"></script>
     </body>
 </html>

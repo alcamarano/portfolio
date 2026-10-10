@@ -51,12 +51,27 @@ button {
     justify-content: center;
 }
 
-.header__button-menu {
+.header__button-menu, .header__button-theme {
     width: 42px;
     height: 42px;
     display: flex;
     align-items: center;
+}
+
+.header__button-menu {
     justify-content: flex-end;
+}
+
+.header__button-theme {
+    justify-content: center;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main__section-hero {
+    
 }
 
 @media (min-width: 800px) {
@@ -85,7 +100,7 @@ button {
 }
 
 @media (min-width: 1500px) {
-    .header {
+    .header, .main {
         width: 1500px;
         margin: 0 auto;
     }

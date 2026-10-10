@@ -2,25 +2,29 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     /*Fontes*/
     --font-inter: "Inter", sans-serif;
     --font-jetbrains: "JetBrains Mono", monospace;
-    /*Cores*/
-    --color-accent: #5fd4c6;
-    --color-accent-contrast: #0b6e66;
+    /*Tamanho das fontes*/
+    --text-title: 2.2rem;
+    --text-subtitle: 1.2rem;
+    --text-paragraph: .98rem;
+    --text-code: .7rem;
+    /*Cores gerais*/
+    --color-accent: #0b6e66;
     /*Cores (tema claro)*/
     --color-bg-light: #FAFAF8;
     --color-menu-light: #F3F3EF;
-    --color-surface-light: #171B1F;
+    --color-border-light: #E3E5E8;
     --color-text-primary-light: #17191C;
     --color-text-secondary-light: #565D66;
-    --color-border-light: #E3E5E8;
     /*Cores (tema escuro)*/
     --color-bg-dark: #0F1214;
     --color-menu-dark: #0C0F11;
-    --color-surface-dark: #FCFCFC;
+    --color-border-dark: #272D33;
     --color-text-primary-dark: #ECEEF0;
     --color-text-secondary-dark: #A3ABB3;
-    --color-border-dark: #272D33;
 }
