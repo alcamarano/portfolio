@@ -12,14 +12,23 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-inter: "Inter", sans-serif;
+    --text-title: 2.2rem;
+    --text-subtitle: 1.2rem;
+    --text-paragraph: .96rem;
+    --text-code: .7rem;
+    --color-accent: #22c55e;
     --color-bg-light: #FAFAF8;
     --color-menu-light: #F3F3EF;
     --color-border-light: #E3E5E8;
     --color-text-primary-light: #17191C;
+    --color-text-secondary-light: #565D66;
+    --color-surface-light: #FFFFFF;
     --color-bg-dark: #0F1214;
     --color-menu-dark: #0C0F11;
     --color-border-dark: #272D33;
     --color-text-primary-dark: #ECEEF0;
+    --color-text-secondary-dark: #A3ABB3;
+    --color-surface-dark: #171B1F;
   }
 }
 @layer base {
@@ -174,12 +183,22 @@
   .hidden {
     display: none;
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-border-dark {
+    border-color: var(--color-border-dark);
+  }
   .border-border-light {
     border-color: var(--color-border-light);
+  }
+  .bg-accent {
+    background-color: var(--color-accent);
   }
   .bg-bg-light {
     background-color: var(--color-bg-light);
@@ -187,8 +206,8 @@
   .bg-menu-light {
     background-color: var(--color-menu-light);
   }
-  .stroke-text-primary-light {
-    stroke: var(--color-text-primary-light);
+  .bg-surface-light {
+    background-color: var(--color-surface-light);
   }
   .font-inter {
     font-family: var(--font-inter);
@@ -197,11 +216,17 @@
     --tw-tracking: .6px;
     letter-spacing: .6px;
   }
+  .text-accent {
+    color: var(--color-accent);
+  }
   .text-text-primary-dark {
     color: var(--color-text-primary-dark);
   }
   .text-text-primary-light {
     color: var(--color-text-primary-light);
+  }
+  .text-text-secondary-light {
+    color: var(--color-text-secondary-light);
   }
   .dark\:block:where(.dark, .dark *) {
     display: block;
@@ -212,14 +237,23 @@
   .dark\:border-border-dark:where(.dark, .dark *) {
     border-color: var(--color-border-dark);
   }
+  .dark\:border-border-light:where(.dark, .dark *) {
+    border-color: var(--color-border-light);
+  }
   .dark\:bg-bg-dark:where(.dark, .dark *) {
     background-color: var(--color-bg-dark);
   }
   .dark\:bg-menu-dark:where(.dark, .dark *) {
     background-color: var(--color-menu-dark);
   }
+  .dark\:bg-surface-dark:where(.dark, .dark *) {
+    background-color: var(--color-surface-dark);
+  }
   .dark\:text-text-primary-dark:where(.dark, .dark *) {
     color: var(--color-text-primary-dark);
+  }
+  .dark\:text-text-secondary-dark:where(.dark, .dark *) {
+    color: var(--color-text-secondary-dark);
   }
 }
 @property --tw-border-style {
