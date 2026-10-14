@@ -71,7 +71,7 @@ button {
     padding: 0 20px;
 }
 
-.main__section-hero, .main__section-about {
+.main__section-hero {
     width: 100%;
     height: 100dvh;
     display: flex;
@@ -148,6 +148,96 @@ button {
     text-decoration-color: var(--color-accent);
 }
 
+.main__section-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 0;
+}
+
+.about__content {
+    max-width: 900px;
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--text-subtitle);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about__content div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about__content p {
+    font-size: var(--text-paragraph);
+}
+
+.about__cards {
+    width: 100%;
+}
+
+.about__cards dl {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about__cards dl > div {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.about__cards dt {
+    font-size: var(--text-code);
+    font-weight: 400;
+}
+
+.about__cards dd {
+    font-size: var(--text-paragraph-card);
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 380px) {
+    .about__cards {
+        max-width: 900px;
+    }
+
+    .about__cards dl {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about__cards dl > div {
+        width: 340px;
+    }
+}
+
 @media (min-width: 800px) {
     .header__button-menu {
         display: none;
@@ -173,12 +263,12 @@ button {
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     body {
         display: flex;
         justify-content: center;
     }
     .header, .main {
-        width: 1300px;
+        width: 1000px;
     }
 }
