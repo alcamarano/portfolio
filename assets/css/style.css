@@ -268,7 +268,36 @@ button {
     MAIN - SECTION - EDUCATION
 */
 
+.education__list {
+    width: 100%;
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.education__item {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.education__item--flex {
+    display: flex;
+    gap: 10px;
+}
+
+.vertical-bar {
+    width: 2px;
+    height: 50px;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+}
 
 /* 
     MAIN - SECTION - COURSES
