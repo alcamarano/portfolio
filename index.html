@@ -23,9 +23,9 @@
             <nav id="navHeaderMenu" class="header__nav border-b bg-menu-light dark:bg-menu-dark border-border-light dark:border-border-dark" aria-label="Menu principal">
                 <ul class="header__list text-text-primary-light dark:text-text-primary-dark">
                     <li><a href="#about-me">sobre</a></li>
+                    <li><a href="#skills">habilidades</a></li>
                     <li><a href="#education">formação</a></li>
                     <li><a href="#courses">cursos</a></li>
-                    <li><a href="#skills">habilidades</a></li>
                     <li><a href="#projects">projetos</a></li>
                     <li><a href="#experience">experiência</a></li>
                     <li><a href="#contact">contato</a></li>
@@ -50,12 +50,18 @@
                         Construindo a lógica por trás de sistemas eficientes. Estudante de Análise e Desenvolvimento de Sistemas na FIAP em busca da primeira oportunidade para transformar aprendizado em soluções no dia a dia.
                     </p>
                     <div class="hero__buttons">
-                        <a href="" class="text-text-primary-dark bg-accent">Ver projetos</a>
-                        <a href="" class="text-text-primary-light dark:text-text-primary-dark border border-border-dark dark:border-border-light">Fale comigo</a>
+                        <a href="#about-me" class="text-text-primary-dark bg-accent">Sobre mim</a>
+                        <a href="#projects" class="text-text-primary-light dark:text-text-primary-dark border border-border-dark dark:border-border-light">Projetos</a>
                     </div>
                     <div class="hero__links">
-                        <a href="" class="text-text-primary-light dark:text-text-primary-dark">Github</a>
-                        <a href="" class="text-text-primary-light dark:text-text-primary-dark">LinkedIn</a>
+                        <a href="https://github.com/alcamarano" target="_blank">
+                            <img src="assets/icons/github-light.png" alt="Logo do GitHub" class="hidden dark:block">
+                            <img src="assets/icons/github-dark.png" alt="Logo do GitHub" class="block dark:hidden">
+                        </a>
+                        <a href="https://www.linkedin.com/in/alcamarano/" target="_blank">
+                            <img src="assets/icons/linkedin-light.png" alt="Logo do LinkedIn" class="hidden dark:block">
+                            <img src="assets/icons/linkedin-dark.png" alt="Logo do LinkedIn" class="block dark:hidden">
+                        </a>
                     </div>
                 </div>
             </section>
@@ -91,47 +97,89 @@
                         <dd class="about__value text-text-primary-light dark:text-text-primary-dark">Português (nativo), Inglês (básico)</dd>
                     </div>
                 </dl>
+                <div class="about__social">
+                    <a href="https://github.com/alcamarano" target="_blank">
+                        <img src="assets/icons/github-light.png" alt="Logo do GitHub" class="hidden dark:block">
+                        <img src="assets/icons/github-dark.png" alt="Logo do GitHub" class="block dark:hidden">
+                    </a>
+                    <a href="https://www.linkedin.com/in/alcamarano/" target="_blank">
+                        <img src="assets/icons/linkedin-light.png" alt="Logo do LinkedIn" class="hidden dark:block">
+                        <img src="assets/icons/linkedin-dark.png" alt="Logo do LinkedIn" class="block dark:hidden">
+                    </a>
+                </div>
+            </section>
+            <!-- Habilidades -->
+            <section id="skills" class="main__section main__section--spaced skills">
+                <h3 class="text-text-primary-light dark:text-text-primary-dark">Habilidades</h3>
+                <div class="skills__list">
+                    <div class="skills__item">
+                        <h4>Front-end</h4>
+                        <ol class="text-text-secondary-light dark:text-text-secondary-dark">
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">HTML5</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">CSS3</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">JavaScript</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">TailwindCSS</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">TypeScript</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">React</li>
+                        </ol>
+                    </div>
+                    <div class="skills__item">
+                        <h4>Back-end e banco de dados</h4>
+                        <ol class="text-text-secondary-light dark:text-text-secondary-dark">
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Python</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Java</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Node.js</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Spring Boot</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Maven</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">SQL</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Oracle</li>
+                        </ol>
+                    </div>
+                    <div class="skills__item">
+                        <h4>Ferramentas</h4>
+                        <ol class="text-text-secondary-light dark:text-text-secondary-dark">
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">VS Code</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">IntelliJ IDEA</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Git</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">GitHub</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Figma</li>
+                        </ol>
+                    </div>
+                </div>
             </section>
             <!-- Formação -->
             <section id="education" class="main__section main__section--spaced education">
                 <h3 class="text-text-primary-light dark:text-text-primary-dark">Formação</h3>
                 <div>
-
+                    
                 </div>
             </section>
             <!-- Cursos -->
             <section id="courses" class="main__section main__section--spaced courses">
                 <h3 class="text-text-primary-light dark:text-text-primary-dark">Cursos</h3>
                 <div>
-
-                </div>
-            </section>
-            <!-- Habilidades -->
-            <section id="skills" class="main__section main__section--spaced skills">
-                <h3 class="text-text-primary-light dark:text-text-primary-dark">Habilidades</h3>
-                <div>
-
+                    
                 </div>
             </section>
             <!-- Projetos -->
             <section id="projects" class="main__section main__section--spaced projects">
                 <h3 class="text-text-primary-light dark:text-text-primary-dark">Projetos</h3>
                 <div>
-
+                    
                 </div>
             </section>
             <!-- Experiência -->
             <section id="experience" class="main__section main__section--spaced experience">
                 <h3 class="text-text-primary-light dark:text-text-primary-dark">Experiência</h3>
                 <div>
-
+                    
                 </div>
             </section>
             <!-- Contato -->
             <section id="contact" class="main__section main__section--spaced contact">
                 <h3 class="text-text-primary-light dark:text-text-primary-dark">Contato</h3>
                 <div>
-
+                    
                 </div>
             </section>
         </main>
