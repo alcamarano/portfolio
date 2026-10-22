@@ -2,7 +2,7 @@ const btnHeaderMenu = document.getElementById('btnHeaderMenu');
 const navHeaderMenu = document.getElementById('navHeaderMenu');
 
 function setMenu(open) {
-    navHeaderMenu.classList.toggle('header__nav-menu--open', open);
+    navHeaderMenu.classList.toggle('header__nav--open', open);
     btnHeaderMenu.setAttribute('aria-expanded', String(open));
 }
 
