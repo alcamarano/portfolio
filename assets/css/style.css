@@ -48,6 +48,8 @@ input, textarea {
     justify-content: space-between;
     padding: 0 20px;
     position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header__link {
@@ -386,7 +388,20 @@ input, textarea {
     FOOTER
 */
 
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 690px;
+    padding: 0 20px;
+}
 
+.footer p {
+    font-size: var(--text-paragraph-card);
+    text-align: center;
+}
 
 /* 
     RESPONSIVIDADE
@@ -434,11 +449,8 @@ input, textarea {
 }
 
 @media (min-width: 1000px) {
-    body {
-        display: flex;
-        justify-content: center;
-    }
-    .header, .main {
+    .header, .main, .footer {
         width: 1000px;
+        margin: 0 auto;
     }
 }
