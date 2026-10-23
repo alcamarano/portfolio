@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -7,7 +7,6 @@
 @theme {
     /*Fontes*/
     --font-inter: "Inter", sans-serif;
-    --font-jetbrains: "JetBrains Mono", monospace;
     /*Tamanho das fontes*/
     --text-title: 2.4rem;
     --text-subtitle: 1.5rem;
