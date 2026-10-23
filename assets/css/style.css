@@ -265,10 +265,10 @@ button {
 }
 
 /* 
-    MAIN / SECTION / EDUCATION + MAIN / SECTION / COURSES
+    MAIN / SECTION / EDUCATION + MAIN / SECTION / COURSES + MAIN / SECTION / EXPERIENCE
 */
 
-.education__list, .courses__list {
+.education__list, .courses__list, .experience__list {
     width: 100%;
     max-width: 690px;
     display: flex;
@@ -276,7 +276,7 @@ button {
     gap: 10px;
 }
 
-.education__item, .courses__item {
+.education__item, .courses__item, .experience__item {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
@@ -286,7 +286,7 @@ button {
     gap: 10px;
 }
 
-.education__item--flex, .courses__item--flex {
+.education__item--flex, .courses__item--flex, .experience__item--flex {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -294,7 +294,8 @@ button {
 }
 
 .education__item > div:first-child,
-.courses__item > div:first-child {
+.courses__item > div:first-child,
+.experience__item > div:first-child {
     flex: 1 1 280px;
     min-width: 0;
 }
@@ -316,17 +317,16 @@ button {
     display: none;
 }
 
-/* 
-    MAIN / SECTION / PROJECTS
-*/
+.education__item p, .courses__item p, .experience__item p {
+    font-size: var(--text-paragraph-card);
+    font-weight: 400;
+}
 
+.experience__item--flex {
+    flex: 0 0 180px;
+    width: 180px;
 
-
-/* 
-    MAIN / SECTION / EXPERIENCE
-*/
-
-
+}
 
 /* 
     MAIN / SECTION / CONTACT
@@ -356,11 +356,11 @@ button {
 }
 
 @media (min-width: 850px) {
-    .header__button--menu {
+    .header__menu-toggle {
         display: none;
     }
 
-    .header__nav--menu {
+    .header__nav {
         display: block;
         position: static;
         width: auto;
@@ -368,13 +368,13 @@ button {
         background-color: transparent;
     }
 
-    .header__ul--menu {
+    .header__list {
         flex-direction: row;
         gap: 15px;
         padding: 0;
     }
 
-    .header__ul--menu li, .header__ul--menu a {
+    .header__list li, .header__list a {
         width: auto;
         height: auto;
     }
