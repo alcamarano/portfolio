@@ -122,7 +122,7 @@ button {
 }
 
 /* 
-    MAIN - SECTION - HERO
+    MAIN / SECTION / HERO
 */
 
 .hero {
@@ -180,7 +180,7 @@ button {
 }
 
 /* 
-    MAIN - SECTION - ABOUT ME
+    MAIN / SECTION / ABOUT ME
 */
 
 .about__text {
@@ -233,7 +233,7 @@ button {
 
 
 /* 
-    MAIN - SECTION - SKILLS
+    MAIN / SECTION / SKILLS
 */
 
 .skills__list {
@@ -265,10 +265,10 @@ button {
 }
 
 /* 
-    MAIN - SECTION - EDUCATION
+    MAIN / SECTION / EDUCATION + MAIN / SECTION / COURSES
 */
 
-.education__list {
+.education__list, .courses__list {
     width: 100%;
     max-width: 690px;
     display: flex;
@@ -276,49 +276,60 @@ button {
     gap: 10px;
 }
 
-.education__item {
+.education__item, .courses__item {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
     gap: 10px;
 }
 
-.education__item--flex {
+.education__item--flex, .courses__item--flex {
     display: flex;
+    align-items: center;
     gap: 10px;
+    flex: 0 0 auto;
+}
+
+.education__item > div:first-child,
+.courses__item > div:first-child {
+    flex: 1 1 280px;
+    min-width: 0;
 }
 
 .vertical-bar {
     width: 2px;
-    height: 50px;
+    height: 100%;
     background-color: var(--color-accent);
     border-radius: 2px;
 }
 
+.courses__button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.courses__item--hidden {
+    display: none;
+}
+
 /* 
-    MAIN - SECTION - COURSES
+    MAIN / SECTION / PROJECTS
 */
 
 
 
 /* 
-    MAIN - SECTION - PROJECTS
+    MAIN / SECTION / EXPERIENCE
 */
 
 
 
 /* 
-    MAIN - SECTION - EXPERIENCE
-*/
-
-
-
-/* 
-    MAIN - SECTION - CONTACT
+    MAIN / SECTION / CONTACT
 */
 
 
