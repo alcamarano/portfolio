@@ -377,9 +377,27 @@
             <!-- Contato -->
             <section id="contact" class="main__section main__section--spaced contact">
                 <h3 class="text-text-primary-light dark:text-text-primary-dark">Contato</h3>
-                <div>
-                    
-                </div>
+                <form id="formContact" class="contact__form">
+                    <input type="hidden" name="access_key" value="8de2d249-2b84-4b57-ada5-1ad720b0fad8">
+                    <input type="hidden" name="subject" value="Novo contato pelo portfólio">
+                    <input type="hidden" name="from_name" value="Portfólio">
+                    <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+                    <div>
+                        <label for="inpName" class="text-text-primary-light dark:text-text-primary-dark">Nome:</label>
+                        <input type="text" id="inpName" name="name" required class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-secondary-light dark:text-text-secondary-dark">
+                    </div>
+                    <div>
+                        <label for="inpEmail" class="text-text-primary-light dark:text-text-primary-dark">E-mail:</label>
+                        <input type="email" id="inpEmail" name="email" required class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-secondary-light dark:text-text-secondary-dark">
+                    </div>
+                    <div>
+                        <label for="inpMessage" class="text-text-primary-light dark:text-text-primary-dark">Mensagem:</label>
+                        <textarea id="inpMessage" name="message" rows="5" required class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark text-text-secondary-light dark:text-text-secondary-dark"></textarea>
+                    </div>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button type="submit" id="btnSubmitFormContact" class="text-text-primary-dark bg-accent">Enviar</button>
+                    <p id="formStatus" role="status"></p>
+                </form>
             </section>
         </main>
         <footer class="footer">
@@ -388,5 +406,7 @@
         <script src="assets/js/theme.js"></script>
         <script src="assets/js/menu.js"></script>
         <script src="assets/js/courses.js"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="assets/js/contact.js"></script>
     </body>
 </html>

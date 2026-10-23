@@ -32,6 +32,10 @@ button {
     cursor: pointer;
 }
 
+input, textarea {
+    outline: none;
+}
+
 /* 
     HEADER
 */
@@ -332,7 +336,51 @@ button {
     MAIN / SECTION / CONTACT
 */
 
+.contact__form {
+    width: 100%;
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.contact__form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact__form label {
+    font-size: var(--text-paragraph);
+}
+
+.contact__form input {
+    height: 40px;
+    padding: 0 8px;
+}
+
+.contact__form textarea {
+    padding: 8px;
+}
+
+.contact__form input, .contact__form textarea {
+    width: 100%;
+    border-radius: 8px;
+    font-size: var(--text-paragraph-card);
+}
+
+.contact__form button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.h-captcha {
+    display: flex;
+    align-items: center;
+    transform: scale(0.85);
+}
 
 /* 
     FOOTER
@@ -353,6 +401,11 @@ button {
     .about__list div {
         width: 340px;
     }
+
+    .h-captcha {
+        transform: scale(1);
+    }
+
 }
 
 @media (min-width: 850px) {
