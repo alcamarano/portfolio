@@ -35,7 +35,6 @@ Este portfólio foi desenvolvido para apresentar meus projetos, habilidades e tr
 
 ## 🗺️ Roadmap
 
-- [ ] Adicionar seção de projetos com cards interativos e links diretos
 - [ ] Implementar internacionalização (Suporte para Inglês / Português)
 
 <br>
