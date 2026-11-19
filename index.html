@@ -30,6 +30,7 @@
                     <li><a href="#skills">habilidades</a></li>
                     <li><a href="#education">formação</a></li>
                     <li><a href="#courses">cursos</a></li>
+                    <li><a href="#projects">projetos</a></li>
                     <li><a href="#experience">experiência</a></li>
                     <li><a href="#contact">contato</a></li>
                     <button type="button" id="btnTheme" class="header__theme-toggle">
@@ -139,7 +140,7 @@
                             <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">JavaScript</li>
                             <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">TypeScript</li>
                             <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">React</li>
-                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">TailwindCSS</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Tailwind CSS</li>
                         </ol>
                     </div>
                     <div class="skills__item">
@@ -150,6 +151,7 @@
                             <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Maven</li>
                             <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">Insomnia</li>
                             <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">IntelliJ IDEA</li>
+                            <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">PyCharm</li>
                             <li class="bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">VS Code</li>
                         </ol>
                     </div>
@@ -362,6 +364,49 @@
                     </li>
                 </ol>
                 <button type="button" id="btnCourses" aria-expanded="false" aria-controls="olListCourses" class="courses__button text-text-primary-dark bg-accent">Ver todos</button>
+            </section>
+            <!-- Projetos -->
+            <section id="projects" class="main__section main__section--spaced projects">
+                <h3 class="text-text-primary-light dark:text-text-primary-dark">Projetos</h3>
+                <ol class="projects__list">
+                    <li class="projects__item bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+                        <div class="projects__header">
+                            <h4 class="text-text-primary-light dark:text-text-primary-dark">AstroBit</h4>
+                            <p class="projects__status text-text-secondary-light dark:text-text-secondary-dark">
+                                <span class="projects__status-dot"></span>Em desenvolvimento
+                            </p>
+                        </div>
+                        <p class="projects__description text-text-secondary-light dark:text-text-secondary-dark">
+                            Pequenos passos, grandes jornadas. Aplicação web para organizar tarefas, acompanhar hábitos e ver a constância crescer, um bit por dia.
+                        </p>
+                        <div class="projects__group">
+                            <h5 class="text-text-primary-light dark:text-text-primary-dark">Funcionalidades</h5>
+                            <ul class="projects__features text-text-secondary-light dark:text-text-secondary-dark">
+                                <li>Cadastro e login com autenticação por token (JWT)</li>
+                                <li>Painel "Hoje" com o resumo das tarefas e hábitos do dia</li>
+                                <li>Tarefas com data: criar, editar, concluir, filtrar e apagar</li>
+                                <li>Hábitos com dias programados e sequência de dias seguidos</li>
+                                <li>Temas claro e escuro e layout para responsivo</li>
+                            </ul>
+                        </div>
+                        <div class="projects__group">
+                            <h5 class="text-text-primary-light dark:text-text-primary-dark">Tecnologias</h5>
+                            <ol class="projects__tags text-text-secondary-light dark:text-text-secondary-dark">
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">Java</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">Spring Boot</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">Spring Data JPA</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">Spring Security</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">JWT</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">Flyway</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">PostgreSQL</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">React</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">TypeScript</li>
+                                <li class="bg-bg-light dark:bg-bg-dark border border-border-light dark:border-border-dark">Vite</li>
+                            </ol>
+                        </div>
+                        <p class="projects__link text-text-secondary-light dark:text-text-secondary-dark">Repositório em breve</p>
+                    </li>
+                </ol>
             </section>
             <!-- Experiência -->
             <section id="experience" class="main__section main__section--spaced experience">

@@ -271,10 +271,10 @@ input, textarea {
 }
 
 /* 
-    MAIN / SECTION / EDUCATION + MAIN / SECTION / COURSES + MAIN / SECTION / EXPERIENCE
+    MAIN / SECTION / EDUCATION + MAIN / SECTION / COURSES + MAIN / SECTION / EXPERIENCE + MAIN / SECTION / PROJECTS
 */
 
-.education__list, .courses__list, .experience__list {
+.education__list, .courses__list, .experience__list, .projects__list {
     width: 100%;
     max-width: 690px;
     display: flex;
@@ -282,7 +282,7 @@ input, textarea {
     gap: 10px;
 }
 
-.education__item, .courses__item, .experience__item {
+.education__item, .courses__item, .experience__item, .projects__item {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
@@ -297,6 +297,76 @@ input, textarea {
     align-items: center;
     gap: 10px;
     flex: 0 0 auto;
+}
+
+.projects__header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.projects__status {
+    padding: 0 10px;
+    border-radius: 20px;
+    font-size: var(--text-code);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.projects__status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    animation: pulse 2s infinite;
+}
+
+.projects__description,
+.projects__features,
+.projects__link {
+    font-size: var(--text-paragraph-card);
+    font-weight: 400;
+}
+
+.projects__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.projects__features {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 18px;
+    list-style: disc;
+}
+
+.projects__features li::marker {
+    color: var(--color-accent);
+}
+
+.projects__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.projects__tags li {
+    font-size: var(--text-code);
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.projects__link {
+    width: 100%;
+    padding-top: 10px;
+    font-style: italic;
+    text-align: center;
 }
 
 .education__item > div:first-child,
